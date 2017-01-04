@@ -455,14 +455,7 @@ a:hover, a:focus {
     color: #73d0da;
     text-decoration: none;
 }
-.texture-overlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/grid.png);
-}
+
 
 /* ==========================================================================
 Buttons
@@ -577,11 +570,46 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
+.home{
+    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
+}
+
+.website{
+    background: rgb(40, 70, 102) url('../img/pagina-web-barcelona.jpg') no-repeat center center;
+}
+
+.seo{
+    background: rgb(40, 70, 102) url('../img/posicionamiento-seo-barcelona.jpg') no-repeat center center;
+}
+
+.our-projects{
+    background: rgb(40, 70, 102) url('../img/nuestras-paginas-webs-barcelona.jpg') no-repeat center center;
+}
+
+.contacto{
+    background: rgb(40, 70, 102) url('../img/contacto-paginas-webs-barcelona.jpg') no-repeat center center;
+}
+
+.blog{
+    background: rgb(40, 70, 102) url('../img/blog-paginas-webs-barcelona.jpg') no-repeat center center;
+}
+
+.texture-overlay{
+     background: #32566F; /* fallback for old browsers */  
+  background: -webkit-linear-gradient(to left, #1D7CBF, #32566F); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1D7CBF, #32566F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity:0.8;
+}
+
 .hero {
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
 }
@@ -956,7 +984,7 @@ footer ul {
 }
 footer li {
     float: left;
-    margin-right: 15%;
+    margin-right: 5%;
     list-style: none;
     text-transform: uppercase;
     font-weight: 400;
@@ -1003,7 +1031,7 @@ Nav Overlay
 .overlay ul li {
     display: block;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .overlay ul li:last-child {
     margin-right: 0px
@@ -1090,4 +1118,143 @@ Waypoints
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 400
+  rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+}
+
+.card {
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card:hover{
+  color:#53a7ea;
+}
+
+.card-img {
+    display : block;
+    margin : auto;
+}
+
+.card-text {
+  font-size: 85%;
+  text-align: center;
+}
+
+.post-preview > a {
+  color: #333333;
+}
+.post-preview > a:hover,
+.post-preview > a:focus {
+  text-decoration: none;
+  color: #0085A1;
+}
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+      font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+}
+.post-preview > a > .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+      font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+}
+.post-preview > .post-meta {
+  color: #777777;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #333333;
+}
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus {
+  color: #0085A1;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+
+.post{
+  font-family: 'Lora', 'Times New Roman', serif !important; 
+  font-size: 20px !important;
+  color: #333333 !important;
+  line-height: 1.5 !important;
+  margin: 30px 0 !important;
+}
+
+blockquote {
+    color: #777;
+    font-style: italic;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
+.caption {
+    font-size: 14px;
+    padding: 10px;
+    font-style: italic;
+    margin: 0;
+    display: block;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text-muted {
+    color: #777;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 36px;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
