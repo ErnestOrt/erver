@@ -1,3 +1,20 @@
+<?php
+// El mensaje
+$mensaje = $_POST['first_name'] . " " . $_POST['last_name'];
+$mensaje .= "\n" ;
+$mensaje .= $_POST['email'];
+$mensaje .= "\n";
+$mensaje .= $_POST['message'];
+
+
+// Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+$mensaje = wordwrap($mensaje, 70, "\r\n");
+
+// Enviarlo
+mail('info@erversolutions.es', 'Mensaje desde la web', $mensaje);
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -39,16 +56,6 @@
 		<meta name="twitter:url" content="http://www.erversolutions.es/" />
 		<meta name="twitter:card" content="summary" />
 
-				<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89919366-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -62,13 +69,13 @@
 		<![endif]-->
 		<!-- open/close -->
 		<header>
-			<section class="hero blog">
+			<section class="hero contacto">
 				<div class="texture-overlay"></div>
 				<div class="container">
 					<div class="row nav-wrapper">
 						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
 							<a href="http://www.erversolutions.es"><img src="img/logo-erver.jpg" alt="HTML5 Logo"></a>
-							<h2>ERVER Solutions - WEB Blog</h2>
+							<h2>ERVER Solutions - Contacto</h2>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
 							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
@@ -76,7 +83,7 @@
 					</div>
 					<div class="row hero-content">
 						<div class="col-md-12">
-							<h1 class="animated fadeInDown">El blog de <b>ERVER Solutions</b> te dará los mejores consejos a la hora de crear y promocionar tu <b>página web</b>.</h1>
+							<h1 class="animated fadeInDown">En <b>ERVER Solutions</b>, contacta con nosotros para realizar tu <b>página web</b> ideal.</h1>
 							<a href="#about" class="learn-btn animated fadeInUp">Saber Más <i class="fa fa-arrow-down"></i></a>
 						</div>
 					</div>
@@ -86,64 +93,24 @@
 		<section class="video" id="about">
 				<div class="container">
 
-			      <div class="row">
-			      	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		                <div class="post-preview">
-		                    <a href="./blog-o-pagina-web-barcelona.html">
-		                        <h2 class="post-title">
-		                          ¿Crear un blog o crear una página web?
-		                        </h2>
-		                        <h3 class="post-subtitle">
-		                           La elección ideal para tu negocio, blog o página web
-		                        </h3>
-		                    </a>
-		                    <p class="post-meta">Creado por <a href="http://www.erversolutions.es">ERVER Solutions</a> en Enero 10, 2017</p>
-		                </div>
-		                <hr>
+			      <hr class="featurette-divider">
+
+			      <div class="row featurette">
+			        <div class="col-md-7">
+			          <h2 class="featurette-heading">Contacto ERVER Solutions. <span class="text-muted">Tu empresa de creación de páginas webs en Barcelona.</span></h2>
+			          <p class="lead">¡Gracias por ponerte en contacto con nosotros! Te reponderemos en breve.</p>
+		              <p class="lead">Puedes llamarnos al 628 799 888 o enviarnos un e-mail a info@erversolutions.es. ¡Te ayudaremos!</p>
+
 		            </div>
-		            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		                <div class="post-preview">
-		                    <a href="./5-razones-tener-pagina-web-barcelona.html">
-		                        <h2 class="post-title">
-		                           5 razones por las que tu negocio necesita crear una página web
-		                        </h2>
-		                        <h3 class="post-subtitle">
-		                            Una web es necesaria para los propósitios que te has marcado para tu negocio
-		                        </h3>
-		                    </a>
-		                    <p class="post-meta">Creado por <a href="http://www.erversolutions.es">ERVER Solutions</a> en Enero 4, 2017</p>
-		                </div>
-		                <hr>
-		            </div>
-		            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		                <div class="post-preview">
-		                    <a href="./responsive-pagina-web-barcelona.html">
-		                        <h2 class="post-title">
-		                           2017, Responsive o muerte
-		                        </h2>
-		                        <h3 class="post-subtitle">
-		                            Google ha puesto fecha limite que las webs no se adapten
-		                        </h3>
-		                    </a>
-		                    <p class="post-meta">Creado por <a href="http://www.erversolutions.es">ERVER Solutions</a> en Diciembre 29, 2016</p>
-		                </div>
-		                <hr>
-		            </div>
-		            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		                <div class="post-preview">
-		                    <a href="./como-crear-pagina-web-barcelona.html">
-		                        <h2 class="post-title">
-		                           Como crear una página web
-		                        </h2>
-		                        <h3 class="post-subtitle">
-		                            Consejos básicos para principiantes y básicos para crear una página web
-		                        </h3>
-		                    </a>
-		                    <p class="post-meta">Creado por <a href="http://www.erversolutions.es">ERVER Solutions</a> en Diciembre 20, 2016</p>
-		                </div>
-		                <hr>
-		            </div>
-		        </div>
+
+			        
+
+			        <div class="col-md-5">
+			          <img class="featurette-image img-fluid mx-auto" src="img/contacto-web-barcelona-1.jpg" alt="Generic placeholder image">
+			        </div>
+			      </div>
+
+			      <hr class="featurette-divider">
 			</div>
 			     
 		</section>
@@ -271,5 +238,6 @@
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/min/scripts-min.js"></script>
+
 	</body>
 </html>

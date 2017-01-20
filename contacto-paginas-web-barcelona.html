@@ -91,10 +91,25 @@
 			        <div class="col-md-7">
 			          <h2 class="featurette-heading">Contacto ERVER Solutions. <span class="text-muted">Tu empresa de creación de páginas webs en Barcelona.</span></h2>
 			          <p class="lead">¡Envíanos tus datos y nos pondremos en contacto contigo!</p>
-			          <p class="lead">Tel. 628 799 888</p>
-			          <p class="lead">info@erversolutions.es</p>
 
-			        </div>
+
+
+
+			         
+                  	<form action="info.php" method="post" name="contact_form">
+
+		 				<input id="first_name" class="form-control" name="first_name" type="text" value="" size="30" aria-required="true" placeholder="Nombre*" title="Nom" required>
+		 				<input id="last_name" class="form-control" name="last_name" type="text" value="" size="30" aria-required="true" placeholder="Apellidos*" title="Apellidos" required>
+		              	<input id="email" class="form-control" name="email" type="text" value="" size="30" aria-required="true" placeholder="Email o Telefono*" title="Email"  required>
+		              	<textarea id="message" class="form-control" name="message" cols="45" rows="3" aria-required="true" placeholder="Message" title="Message*"  required></textarea>
+		              <button name="submit" class="btn btn-lg full-width" type="submit" id="submit">Enviar</button>
+		              </form>
+		               <p class="lead">O si lo prefieres, puedes llamarnos al 628 799 888 o enviarnos un e-mail a info@erversolutions.es. ¡Te ayudaremos!</p>
+
+		            </div>
+
+			        
+
 			        <div class="col-md-5">
 			          <img class="featurette-image img-fluid mx-auto" src="img/contacto-web-barcelona-1.jpg" alt="Generic placeholder image">
 			        </div>
